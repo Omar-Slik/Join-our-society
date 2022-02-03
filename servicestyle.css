@@ -1,0 +1,147 @@
+body{
+background-image: url("servicecandle.jpg");
+background-color: #000000;
+background-repeat: no-repeat;
+}
+.button{
+	background-color: #111111;
+	color:white;
+	padding: 15px 32px;
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+	border: none;
+}
+
+h2{
+	color:white;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container{
+	background-color:222222;
+	border-radius:5px;
+	padding:10px;
+}
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border:none;
+	background-color:#333333;
+  margin-top: 6px;
+	text-align:left;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=reset] {
+	background-color: #111111;
+	color:white;
+	padding: 15px 32px;
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+	border: none;
+	cursor:pointer;
+	left:1px;
+}
+
+input[type=reset]:hover {
+ 	background-color: #222222;
+	color:white;
+	padding: 15px 32px;
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+	border: none;
+}
+
+/ Style the container/contact section /
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/ Create two columns that float next to eachother /
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/ Clear floats after the columns /
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=reset] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+p{
+	position:absolute;
+	top:40px;
+	left:50px;
+	font-size:20px;
+	font-family:arial;
+	float:left;
+	color:white;
+}
+
+#submit{
+	position:relative;
+	bottom:35px
+}
+h4{
+	mix-blend-mode: difference;
+	color:white;
+}
+
+#hiddentext1{
+	transition: opacity 1s;
+}
+#hiddentext2{
+	transition: opacity 1s;
+}
+#hiddentext3{
+	transition: opacity 1s;
+}
+#hiddentext4{
+	transition: opacity 1s;
+}

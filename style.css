@@ -1,0 +1,127 @@
+body{
+background-image: url("candle.jpg");
+background-color: #cccccc;
+background-repeat: no-repeat;
+}
+.button{
+	background-color: #000000;
+	color:white;
+	padding: 15px 32px;
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+	border: none;
+}
+.glitchdiv{
+  animation: glitch 1s linear infinite;
+	width: 1000px;
+	height:100px;
+	font-size:96px;
+	justify-content:center;
+	float:center;
+	color:white;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+.glitchdiv:before,
+.glitchdiv:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.glitchdiv:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+.glitchdiv:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+p{
+	position:absolute;
+	top:40px;
+	left:50px;
+	font-size:20px;
+	font-family:arial;
+	float:left;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#hiddentext1{
+	transition: opacity 1s;
+	color:white;
+}
+#hiddentext2{
+	transition: opacity 1s;
+	color:white;
+}
+#hiddentext3{
+	transition: opacity 1s;
+	color:white;
+}
+#hiddentext4{
+	transition: opacity 1s;
+	color:white;
+}

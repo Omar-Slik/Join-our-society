@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Our services.</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="servicestyle.css">
+		<link rel="icon" href="candle.png">
+	</head>
+		
+	<body>
+		<a href="index.html"><button onmouseover="showtext4()" onmouseout="hidetext4()" class="button"><span>Home</span></button></a>
+		<a href="services.html"><button onmouseover="showtext1()" onmouseout="hidetext1()" class="button"><span>Services</span></button></a>
+		<a href="more.html"><button onmouseover="showtext2()" onmouseout="hidetext2()" class="button"><span>Learn more</span></button></a>
+		<a href="join.html"><button onmouseover="showtext3()" onmouseout="hidetext3()" class="button"><span>Join</span></button></a>
+		<p id="hiddentext1" style="opacity: 0;">Would you like to view our services?</p>
+		<p id="hiddentext2" style="opacity: 0;">Perhaps you'd like to learn more about us?</p>
+		<p id="hiddentext3" style="opacity: 0;">Join us.</p>
+		<p id="hiddentext4" style="opacity: 0;">Return to the home page.</p>
+		<br>
+		<br>
+		<h4 aria-multiline='true'>Hello. We are a group which offer a variety of different services to our kind customers. We do not condone violence, or any other crime for that matter, but the services which we provide do not have to be morally correct, as we Children of the Black Sign do not follow regular constructs such as moral codes, choosing not to restrict ourselves to simple lies and treachery forced upon us by the forces that rule the world and treat us who inhabit this world like dogs. Mere sheep for the slaughter. We will do what is requested for a simple fee of $20, as long as proof of purchase of our book and entrance into our organization is provided. All transactions will be done physically via our subsequent locations, and if you wish to schedule an appointment with a seller, please contact us prior. Enter your email in the box below and we will contact you with a location and a time for the meetup.</p>
+		<br>
+		<br>
+		<h4 aria-multiline='true'>Thank you for your continued support for the Children of the Black Sign.</h4>
+<div class="container">
+  <div style="text-align:left">
+    <h2>Contact us.</h2>
+    <h4 aria-multiline='true'>Input your information below, and we'll get back to you within 5-10 business days. Do not play games with us, lest we play a game with you, as well.</p>
+  </div>
+  <div class="row">
+    <div class="column">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="seek">We'll find you.</option>
+        </select>
+        <textarea id="subject" name="subject" placeholder="Where would you like to meet?" style="height:170px"></textarea>
+        <input type="reset" id="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+	function showtext1(){
+		document.getElementById("hiddentext1").style.opacity="1";
+	}
+	function hidetext1(){
+		document.getElementById("hiddentext1").style.opacity="0";
+	}
+			
+	function showtext2(){
+		document.getElementById("hiddentext2").style.opacity="1";
+	}
+	function hidetext2(){
+		document.getElementById("hiddentext2").style.opacity="0";
+	}
+	function showtext3(){
+		document.getElementById("hiddentext3").style.opacity="1";
+	}
+	function hidetext3(){
+		document.getElementById("hiddentext3").style.opacity="0";
+	}
+	function showtext4(){
+		document.getElementById("hiddentext4").style.opacity="1";
+	}
+	function hidetext4(){
+		document.getElementById("hiddentext4").style.opacity="0";
+	}
+</script>
+</body>
+	

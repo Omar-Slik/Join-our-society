@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Learn more.</title>
+    <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="morestyle.css">
+		<link rel="icon" href="candle.png">
+  </head>
+
+  <body>
+  	<a href="index.html"><button onmouseover="showtext4()" onmouseout="hidetext4()" class="button"><span>Home</span></button></a>
+		<a href="services.html"><button onmouseover="showtext1()" onmouseout="hidetext1()" class="button"><span>Services</span></button></a>
+		<a href="more.html"><button onmouseover="showtext2()" onmouseout="hidetext2()" class="button"><span>Learn more</span></button></a>
+		<a href="join.html"><button onmouseover="showtext3()" onmouseout="hidetext3()" class="button"><span>Join</span></button></a>
+  	<p id="hiddentext1" style="opacity: 0;">Would you like to view our services?</p>
+		<p id="hiddentext2" style="opacity: 0;">Perhaps you'd like to learn more about us?</p>
+		<p id="hiddentext3" style="opacity: 0;">Join us.</p>
+		<p id="hiddentext4" style="opacity: 0;">Return to the home page.</p>
+		<div class="content">
+			<div class="random">
+				<span class="nbr ltr">
+					0
+				</span>
+				<span class="nbr ltr">
+					0
+				</span>
+				<span class="nbr ltr">
+					0
+				</span>
+				<span class="nbr ltr">
+					0
+				</span>
+				<span class="nbr ltr">
+					0
+				</span>
+				<span class="nbr ltr">
+					0
+				</span>
+				<span class="nbr ltr">
+					0
+				</span>
+				<span class="nbr ltr">
+					0
+				</span>
+				<span class="nbr ltr">
+					0
+				</span>
+				<span class="nbr ltr">
+					0
+				</span>
+		</div>
+	</div>
+	<textarea id="information" disabled="yes">
+We are the children of the Black Sign, an international organization intended exclusively to introduce the citizens of the world about the true talk of the dark one. The dark one is not an evil being, as no creature is evil in nature. All creatures are merely formed by the surroundings that lead them towards the branch of life where they are exposed to the most amount of dangerous or overall uncomfortable sides of life which leads them to being raised only poorly. We here at the Children of the Black Sign believe that all should know the dark future that surrounds us. Nobody is safe. The truth must come out.
+	
+	
+The future is now. We must not close our eyes, we must not be naïve to what is going to happen.
+	
+We must stand united. Safety is a lie. The world is ending.
+	
+	
+	
+	
+We are the Children of the Black Sign.
+
+
+Our schedule:
+</textarea>
+<br>
+<br>
+<img src="schedule.png">
+  <script>
+		function showtext1(){
+			document.getElementById("hiddentext1").style.opacity="1";
+		}
+		function hidetext1(){
+			document.getElementById("hiddentext1").style.opacity="0";
+		}
+			
+		function showtext2(){
+			document.getElementById("hiddentext2").style.opacity="1";
+		}
+		function hidetext2(){
+			document.getElementById("hiddentext2").style.opacity="0";
+		}
+		function showtext3(){
+			document.getElementById("hiddentext3").style.opacity="1";
+		}
+		function hidetext3(){
+			document.getElementById("hiddentext3").style.opacity="0";
+		}
+		function showtext4(){
+			document.getElementById("hiddentext4").style.opacity="1";
+		}
+		function hidetext4(){
+			document.getElementById("hiddentext4").style.opacity="0";
+		}
+	</script>
+	<script
+		src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'>
+	</script>
+	<script 
+		src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+	</script>
+<script>
+	$(document).ready(function(){
+  
+  var $randomnbr = $('.nbr');
+  var $timer= 20;
+  var $it;
+  var $data = 0;
+  var index;
+  var change;
+  var letters = ["L", "E", "A", "R", "N", " ", "M", "O", "R", "E"];
+  
+  $randomnbr.each(function(){
+      
+    change = Math.round(Math.random()*100);
+    $(this).attr('data-change', change);
+    
+  });
+  
+  function random(){
+    return Math.round(Math.random()*9);
+  };
+  
+  function select(){
+    return Math.round(Math.random()*$randomnbr.length+1);
+  };
+  
+  function value(){
+    $('.nbr:nth-child('+select()+')').html(''+random()+'');
+    $('.nbr:nth-child('+select()+')').attr('data-number', $data);
+    $data++;
+    
+    $randomnbr.each(function(){
+        if(parseInt($(this).attr('data-number')) > parseInt($(this).attr('data-change'))){
+          index = $('.ltr').index(this);
+          $(this).html(letters[index]);
+          $(this).removeClass('nbr');
+        }
+    });
+    
+  };
+  
+  $it = setInterval(value, $timer);
+    
+});
+	</script>
+</body>
+
+
+
+
+
+</html>

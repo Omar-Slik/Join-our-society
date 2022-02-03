@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Join us.</title>
+    <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="joinstyle.css">
+		<script src ="joinscript.js"></script>
+		<link rel="icon" href="candle.png">
+  </head>
+
+  <body>
+   	<a href="index.html"><button onmouseover="showtext4()" onmouseout="hidetext4()" class="button"><span>Home</span></button></a>
+		<a href="services.html"><button onmouseover="showtext1()" onmouseout="hidetext1()" class="button"><span>Services</span></button></a>
+		<a href="more.html"><button onmouseover="showtext2()" onmouseout="hidetext2()" class="button"><span>Learn more</span></button></a>
+		<a href="join.html"><button onmouseover="showtext3()" onmouseout="hidetext3()" class="button"><span>Join</span></button></a>
+  	<p id="hiddentext1" style="opacity: 0;">Would you like to view our services?</p>
+		<p id="hiddentext2" style="opacity: 0;">Perhaps you'd like to learn more about us?</p>
+		<p id="hiddentext3" style="opacity: 0;">Join us.</p>
+		<p id="hiddentext4" style="opacity: 0;">Return to the home page.</p>
+		<svg viewBox="0 0 960 300">
+	<symbol id="s-text">
+		<text text-anchor="middle" x="50%" y="80%">Join us.</text>
+	</symbol>
+
+	<g class = "g-ants">
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+    <use xlink:href="#s-text" class="text-copy"></use>
+    <use xlink:href="#s-text" class="text-copy"></use>
+    <use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+		<use xlink:href="#s-text" class="text-copy"></use>
+	</g>
+</svg>
+<p id="explanation">Complete a short quiz in order to prove you are worthy of<br> joining the Children of the Black Sign.<br><br> Good luck.</p>
+	<form id="quiz" name="quiz">
+		<div id="container">
+			<p>	Do the Children of the Black Sign condone violence of any kind? </p>
+			<input type = "radio" id = "mc1" name= "question1" value="Yes"><label for="mc1">Yes</label><br>
+			<input type = "radio" id = "mc2" name= "question1" value="No"><label for="mc2">No</label>
+			<hr>
+			<p>Where do the Children of the Black Sign operate?</p>
+			<input type = "radio" id = "mc3" name= "question2" value="America, Canada, Australia"><label for="mc3">America, Canada, Australia</label><br>
+			<input type = "radio" id = "mc4" name= "question2" value="Everywhere"><label for="mc4">Everywhere</label><br>
+			<input type = "radio" id = "mc5" name= "question2" value="Sweden, Denmark, Norway"><label for="mc5">Sweden, Denmark, Norway</label>
+			<hr>
+			<p>Do the Children of the Black Sign believe in inherited evil?</p>
+			<input type = "radio" id = "mc6" name= "question3" value="Yes"><label for="mc6">Yes</label><br>
+			<input type = "radio" id = "mc7" name= "question3" value="No"><label for="mc7">No</label><br>
+			<hr>
+			<p>What do we, the Children of the Black Sign wish to accomplish?</p>
+			<input type = "radio" id = "mc8" name= "question4" value="To spread the information of the dark one, teach about it and sell information about it until the world know about its true meaning."><label for="mc8">To spread the information of the dark one, teach about it and sell information about it until the world know about its true meaning.</label><br>
+			<input type = "radio" id = "mc9" name= "question4" value="To live briefly, accomplishing everything that we can do within our brief lifespans to hopefully make the world a better place."><label for="mc9">To live briefly, accomplishing everything that we can do within our brief lifespans to hopefully make the world a better place.</label><br>
+			<hr>
+			<p>Do we have meetings every week -- and are they all physical?</p>
+			<input type = "radio" id = "mc10" name= "question5" value="Yes"><label for="mc10">Yes</label><br>
+			<input type = "radio" id = "mc11" name= "question5" value="No"><label for="mc11">No</label><br>
+			<hr>
+			<input id = "button" type="button" value="Submit" onclick="check();">
+			<p id = "number_correct"></p>
+		</div>
+	</form>
+		<script>
+			function showtext1(){
+				document.getElementById("hiddentext1").style.opacity="1";
+			}
+			function hidetext1(){
+				document.getElementById("hiddentext1").style.opacity="0";
+			}
+			
+			function showtext2(){
+				document.getElementById("hiddentext2").style.opacity="1";
+			}
+			function hidetext2(){
+				document.getElementById("hiddentext2").style.opacity="0";
+			}
+			function showtext3(){
+				document.getElementById("hiddentext3").style.opacity="1";
+			}
+			function hidetext3(){
+				document.getElementById("hiddentext3").style.opacity="0";
+			}
+			function showtext4(){
+				document.getElementById("hiddentext4").style.opacity="1";
+			}
+			function hidetext4(){
+				document.getElementById("hiddentext4").style.opacity="0";
+			}
+		</script>
+</body>
+</html>

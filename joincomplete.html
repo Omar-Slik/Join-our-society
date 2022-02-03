@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>You completed the test.</title>
+    <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="joincompletestyle.css">
+		<link rel="icon" href="candle.png">
+  </head>
+
+  <body>
+		<a href="index.html"><button onmouseover="showtext4()" onmouseout="hidetext4()" class="button"><span>Home</span></button></a>
+		<a href="services.html"><button onmouseover="showtext1()" onmouseout="hidetext1()" class="button"><span>Services</span></button></a>
+		<a href="more.html"><button onmouseover="showtext2()" onmouseout="hidetext2()" class="button"><span>Learn more</span></button></a>
+		<a href="join.html"><button onmouseover="showtext3()" onmouseout="hidetext3()" class="button"><span>Join</span></button></a>
+  	<p id="hiddentext1" style="opacity: 0;">Would you like to view our services?</p>
+		<p id="hiddentext2" style="opacity: 0;">Perhaps you'd like to learn more about us?</p>
+		<p id="hiddentext3" style="opacity: 0;">Join us.</p>
+		<p id="hiddentext4" style="opacity: 0;">Return to the home page.</p>
+		<div class="animated-title">
+		<div class="text-top">
+				<div>
+					<span>Your test</span>
+					<span>is finished.</span>
+				</div>
+			</div>
+			<div class="text-bottom">
+				<div>Welcome to our organization.</div>
+			</div>
+			<p id="text">There is no book, by the way. We've never finished said book since there is no book. There is no cult, this is a school project.	Thank you for visiting my website however. I will see you later.</p>
+		</div>
+
+		<script>
+			function showtext1(){
+				document.getElementById("hiddentext1").style.opacity="1";
+			}
+			function hidetext1(){
+				document.getElementById("hiddentext1").style.opacity="0";
+			}
+			
+			function showtext2(){
+				document.getElementById("hiddentext2").style.opacity="1";
+			}
+			function hidetext2(){
+				document.getElementById("hiddentext2").style.opacity="0";
+			}
+			function showtext3(){
+				document.getElementById("hiddentext3").style.opacity="1";
+			}
+			function hidetext3(){
+				document.getElementById("hiddentext3").style.opacity="0";
+			}
+			function showtext4(){
+				document.getElementById("hiddentext4").style.opacity="1";
+			}
+			function hidetext4(){
+				document.getElementById("hiddentext4").style.opacity="0";
+			}
+		</script>
+  </body>
+
+</html>
